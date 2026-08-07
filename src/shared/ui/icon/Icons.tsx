@@ -191,6 +191,89 @@ export function TrendIcon({ size = 20, className }: IconProps) {
   )
 }
 
+export function BanIcon({ size = 16, className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      aria-hidden
+    >
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="m6.5 6.5 11 11" />
+    </svg>
+  )
+}
+
+export function BotIcon({ size = 26, className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect x="3.5" y="7.5" width="17" height="12" rx="3.5" />
+      <path d="M12 3v4.5" />
+      <circle cx="12" cy="2.6" r="1.4" />
+      <path d="M8.5 12.5v2" />
+      <path d="M15.5 12.5v2" />
+      <path d="M1.5 12v3" />
+      <path d="M22.5 12v3" />
+    </svg>
+  )
+}
+
+export function PlayIcon({ size = 16, className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M10 8.5v7l5.5-3.5-5.5-3.5Z" fill="currentColor" />
+    </svg>
+  )
+}
+
+export function ShieldIcon({ size = 20, className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M12 2.8 4.5 6v6.2c0 4.4 3.1 7.6 7.5 9 4.4-1.4 7.5-4.6 7.5-9V6L12 2.8Z" />
+      <path d="m9 12 2.2 2.2L15.5 10" />
+    </svg>
+  )
+}
+
 export function QuoteIcon({ size = 28, className }: IconProps) {
   return (
     <svg

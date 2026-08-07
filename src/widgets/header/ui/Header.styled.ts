@@ -106,6 +106,14 @@ export const NavLink = styled.a<{ $active: boolean }>`
   border-radius: ${({ theme }) => theme.radius.pill};
   font-size: 14px;
   font-weight: 500;
+  /* Пунктов много — без этого короткие подписи ломаются на две строки. */
+  white-space: nowrap;
+
+  /* На узких ноутбуках поджимаем меню, чтобы оно не выдавило кнопку. */
+  ${media.xl`
+    padding: 8px 9px;
+    font-size: 13px;
+  `}
   color: ${({ theme, $active }) =>
     $active ? theme.color.text : theme.color.textMuted};
   transition: color ${({ theme }) => theme.transition.base};
@@ -113,8 +121,8 @@ export const NavLink = styled.a<{ $active: boolean }>`
   &::after {
     content: '';
     position: absolute;
-    left: 14px;
-    right: 14px;
+    left: 9px;
+    right: 9px;
     bottom: 2px;
     height: 1.5px;
     border-radius: 2px;

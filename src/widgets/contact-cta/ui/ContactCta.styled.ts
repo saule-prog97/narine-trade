@@ -120,9 +120,28 @@ export const Actions = styled.div`
 `
 
 export const Meta = styled.p`
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-family: ${({ theme }) => theme.font.mono};
   font-size: 11.5px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.textFaint};
+`
+
+export const MetaLink = styled.a`
+  transition: color ${({ theme }) => theme.transition.base};
+
+  &:hover {
+    color: ${({ theme }) => theme.color.cyanSoft};
+  }
+`
+
+export const MetaDivider = styled.span`
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
 `

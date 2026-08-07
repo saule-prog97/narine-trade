@@ -10,5 +10,6 @@ export const NAV_ITEMS: NavItem[] = [
   { id: 'mentorship', label: 'Наставничество' },
   { id: 'reviews', label: 'Отзывы' },
   { id: 'pricing', label: 'Тарифы' },
+  { id: 'algo', label: 'Алгоритм' },
   { id: 'exchanges', label: 'Биржи' },
 ]

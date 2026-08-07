@@ -68,6 +68,13 @@ export const Link = styled.a`
   }
 `
 
+export const SocialList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+`
+
 export const Social = styled.a`
   display: inline-flex;
   align-items: center;
@@ -85,6 +92,13 @@ export const Social = styled.a`
     background: rgba(34, 211, 238, 0.1);
     transform: translateY(-2px);
   }
+`
+
+export const SocialNote = styled.span`
+  font-family: ${({ theme }) => theme.font.mono};
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: ${({ theme }) => theme.color.textFaint};
 `
 
 export const Bottom = styled(Container)`

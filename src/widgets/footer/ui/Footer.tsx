@@ -13,6 +13,8 @@ import {
   Risk,
   Small,
   Social,
+  SocialList,
+  SocialNote,
 } from './Footer.styled'
 
 export function Footer() {
@@ -40,14 +42,25 @@ export function Footer() {
 
         <div>
           <ColumnTitle>Связаться</ColumnTitle>
-          <Social
-            href={CONTACTS.telegramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TelegramIcon size={17} />
-            {CONTACTS.telegramHandle}
-          </Social>
+          <SocialList>
+            <Social
+              href={CONTACTS.telegramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TelegramIcon size={17} />
+              {CONTACTS.telegramHandle}
+            </Social>
+            <Social
+              href={CONTACTS.channelUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TelegramIcon size={17} />
+              {CONTACTS.channelHandle}
+            </Social>
+            <SocialNote>Личные сообщения и канал</SocialNote>
+          </SocialList>
         </div>
       </Inner>
 

@@ -4,6 +4,8 @@ import { ArrowIcon, TelegramIcon } from '@/shared/ui/icon'
 import {
   Actions,
   Meta,
+  MetaDivider,
+  MetaLink,
   Panel,
   PanelBorder,
   Pulse,
@@ -48,7 +50,23 @@ export function ContactCta() {
             </Button>
           </Actions>
 
-          <Meta>{CONTACTS.telegramHandle}</Meta>
+          <Meta>
+            <MetaLink
+              href={CONTACTS.telegramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {CONTACTS.telegramHandle}
+            </MetaLink>
+            <MetaDivider aria-hidden />
+            <MetaLink
+              href={CONTACTS.channelUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {CONTACTS.channelHandle}
+            </MetaLink>
+          </Meta>
         </Panel>
       </Reveal>
     </Section>

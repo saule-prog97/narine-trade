@@ -11,6 +11,7 @@ import { Payment } from '@/widgets/payment'
 import { Pricing } from '@/widgets/pricing'
 import { Results } from '@/widgets/results'
 import { Testimonials } from '@/widgets/testimonials'
+import { TradingBot } from '@/widgets/trading-bot'
 import { Main } from './HomePage.styled'
 
 export function HomePage() {
@@ -28,6 +29,7 @@ export function HomePage() {
         <Testimonials />
         <Pricing />
         <Payment />
+        <TradingBot />
         <Exchanges />
         <ContactCta />
       </Main>
