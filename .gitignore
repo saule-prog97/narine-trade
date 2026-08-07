@@ -1,0 +1,51 @@
+# Зависимости
+node_modules
+.pnpm-store
+.yarn
+
+# Сборка
+dist
+dist-ssr
+build
+*.local
+
+# Кэши сборщиков и линтеров
+*.tsbuildinfo
+.vite
+.turbo
+.cache
+.eslintcache
+
+# Логи
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Переменные окружения — секреты не должны попадать в репозиторий
+.env
+.env.*
+!.env.example
+
+# Редакторы и IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Служебные файлы ОС
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Локальные настройки инструментов
+.claude
