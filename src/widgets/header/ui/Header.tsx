@@ -48,7 +48,7 @@ export function Header() {
     <>
       <HeaderRoot $scrolled={scrolled || menuOpen}>
         <Bar>
-          <Logo href="#top" aria-label={`${CONTACTS.brand} — на главную`}>
+          <Logo href="#top" aria-label={`${CONTACTS.brand} - на главную`}>
             <LogoMark aria-hidden>N</LogoMark>
             <LogoText>
               <LogoName>{CONTACTS.brand}</LogoName>

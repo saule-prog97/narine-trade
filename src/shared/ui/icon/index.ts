@@ -13,5 +13,6 @@ export {
   ShieldIcon,
   SparkIcon,
   TelegramIcon,
+  TradingViewIcon,
   TrendIcon,
 } from './Icons'

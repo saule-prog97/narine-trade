@@ -274,6 +274,24 @@ export function ShieldIcon({ size = 20, className }: IconProps) {
   )
 }
 
+/** Фирменный знак TradingView: «T», точка и наклонная черта. */
+export function TradingViewIcon({ size = 28, className }: IconProps) {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={(size / 36) * 28}
+      viewBox="0 0 36 28"
+      fill="currentColor"
+      aria-hidden
+    >
+      <path d="M14 22H7V11H0V4h14v18Z" />
+      <circle cx="20.5" cy="6.5" r="2.5" />
+      <path d="M29 4h7L26 22h-7L29 4Z" />
+    </svg>
+  )
+}
+
 export function QuoteIcon({ size = 28, className }: IconProps) {
   return (
     <svg
